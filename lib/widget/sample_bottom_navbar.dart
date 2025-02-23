@@ -1,3 +1,5 @@
+import 'package:belajar_widget/widget/sample_column_row.dart';
+import 'package:belajar_widget/widget/sample_padding.dart';
 import 'package:flutter/material.dart';
 
 class SampleBottomNavbar extends StatefulWidget {
@@ -16,7 +18,7 @@ class _SampleBottomNavbarState extends State<SampleBottomNavbar> {
   }
 
   List<Widget> pages = [
-    const Text('Home', style: TextStyle(fontSize: 30)),
+    const SampleColumnRow(),
     const Text('Search', style: TextStyle(fontSize: 30)),
     const Text('Favorite', style: TextStyle(fontSize: 30)),
     const Text('Settings', style: TextStyle(fontSize: 30)),
@@ -32,7 +34,7 @@ class _SampleBottomNavbarState extends State<SampleBottomNavbar> {
         ),
         backgroundColor: Colors.blue,
       ),
-      body: Center(child: pages[_selectedIndex]),
+      body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.blue[400],
