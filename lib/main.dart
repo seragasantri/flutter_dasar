@@ -1,5 +1,6 @@
 import 'package:belajar_widget/widget/sample_container.dart';
 import 'package:belajar_widget/widget/sample_images.dart';
+import 'package:belajar_widget/widget/sample_listview.dart';
 import 'package:belajar_widget/widget/sample_text.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: const SampleImages(),
+      home: SampleListview(),
     );
   }
 }
